@@ -1,16 +1,4 @@
 #include<bits/stdc++.h>
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<math.h>
-#include<map>
-#include<string>
-#include<queue>
-#include<stack>
-#include<numeric>
-#include<utility>
-#include<set>
-#include<bitset>
 using namespace std;
 const int nMax = 105;
 long long arr[nMax][nMax][nMax];
@@ -49,7 +37,6 @@ int main(){
 		pivy = que.front()[1];
 		pivz = que.front()[2];
 		que.pop();
-	//	cout<<pivx<<" "<<pivy<<" "<<pivz<<"\n";
 		if(pivx > 0 && arr[pivx-1][pivy][pivz] == 0){
 			if(bfs[pivx-1][pivy][pivz] == -1){
 				bfs[pivx-1][pivy][pivz] = bfs[pivx][pivy][pivz] + 1;
@@ -113,4 +100,3 @@ int main(){
 	cout<<bfs[lx][ly][lz];
 	
 }
-
