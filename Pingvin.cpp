@@ -100,5 +100,3 @@ int main(){
 	cout<<bfs[lx][ly][lz];
 	
 }
-
-//commit?
